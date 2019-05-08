@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the THEMETITLE theme.
+
+javi.settings:
+  type: theme_settings
+  label: 'Javi Lopez Bootstrap 3 Theme settings'
