@@ -7951,14 +7951,18 @@ p:last-child,
   margin-top: 0;
 }
 
-article.article .javi-custom img {
-  filter: grayscale(100%) brightness(50%);
+article.article .javi-custom div img {
   -webkit-filter: grayscale(100%) brightness(50%);
+  filter: grayscale(100%) brightness(50%);
   transition: -webkit-filter 0.2s ease-in-out;
   transition: filter 0.2s ease-in-out;
   transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
 }
-article.article .javi-custom img:hover {
+article.article .javi-custom div img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+article.article .javi-custom div ~ div img {
   -webkit-filter: none;
           filter: none;
 }
