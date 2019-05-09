@@ -1407,7 +1407,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #fff;
+  background-color: lightblue;
 }
 
 input,
@@ -1453,7 +1453,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.428571429;
-  background-color: #fff;
+  background-color: lightblue;
   border: 1px solid #ddd;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
@@ -2900,7 +2900,7 @@ th {
   border-top: 2px solid #ddd;
 }
 .table .table {
-  background-color: #fff;
+  background-color: lightblue;
 }
 
 .table-condensed > thead > tr > th,
@@ -4519,7 +4519,7 @@ tbody.collapse.in {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #555555;
   cursor: default;
-  background-color: #fff;
+  background-color: lightblue;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
@@ -4589,7 +4589,7 @@ tbody.collapse.in {
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
 .nav-tabs-justified > .active > a:hover,
 .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #fff;
+    border-bottom-color: lightblue;
   }
 }
 
@@ -5448,7 +5448,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.428571429;
-  background-color: #fff;
+  background-color: lightblue;
   border: 1px solid #ddd;
   border-radius: 4px;
   transition: border 0.2s ease-in-out;
@@ -7859,6 +7859,10 @@ body.toolbar-loading.toolbar {
   margin-bottom: 15px;
 }
 
+body {
+  background-image: linear-gradient(lightblue, lightblue, lightblue, darkblue);
+}
+
 /**
  * jQuery UI autocomplete widget style overrides.
  *
@@ -7945,4 +7949,16 @@ p:last-child,
 }
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
+}
+
+article.article .field--type-image img {
+  filter: grayscale(100%) brightness(50%);
+  -webkit-filter: grayscale(100%) brightness(50%);
+  transition: -webkit-filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+}
+article.article .field--type-image img:hover {
+  -webkit-filter: none;
+          filter: none;
 }

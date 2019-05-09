@@ -15,6 +15,11 @@
 @import "component/tabs";
 @import "component/toolbar";
 
+// Body style overrides
+body {
+  background-image: $body-bg-img;
+}
+
 // jQuery UI style overrides.
 @import "jquery-ui/autocomplete";
 
@@ -65,5 +70,21 @@ p:last-child,
   padding: 0;
   &:first-child {
     margin-top: 0;
+  }
+}
+
+// Article images
+
+article.article {
+  .field--type-image {
+    img {
+      filter: grayscale(100%) brightness(50%);
+      -webkit-filter: grayscale(100%) brightness(50%);
+      transition: filter 0.3s ease-in-out;
+
+      &:hover {
+        filter: none;
+      }
+    }
   }
 }
