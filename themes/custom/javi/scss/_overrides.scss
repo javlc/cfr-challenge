@@ -76,11 +76,11 @@ p:last-child,
 // Article images
 
 article.article {
-  .field--type-image {
+  .javi-custom {
     img {
       filter: grayscale(100%) brightness(50%);
       -webkit-filter: grayscale(100%) brightness(50%);
-      transition: filter 0.3s ease-in-out;
+      transition: filter 0.2s ease-in-out;
 
       &:hover {
         filter: none;

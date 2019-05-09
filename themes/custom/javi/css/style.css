@@ -7951,14 +7951,14 @@ p:last-child,
   margin-top: 0;
 }
 
-article.article .field--type-image img {
+article.article .javi-custom img {
   filter: grayscale(100%) brightness(50%);
   -webkit-filter: grayscale(100%) brightness(50%);
-  transition: -webkit-filter 0.3s ease-in-out;
-  transition: filter 0.3s ease-in-out;
-  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  transition: -webkit-filter 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
 }
-article.article .field--type-image img:hover {
+article.article .javi-custom img:hover {
   -webkit-filter: none;
           filter: none;
 }
